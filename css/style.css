@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.button {
+    background: var(--button-bg);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.gallery-preview img {
+    width: 150px;
+    margin: 0.5rem;
+}
