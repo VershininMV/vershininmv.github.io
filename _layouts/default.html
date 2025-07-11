@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>VMV</h1>
+        <nav>
+            <a href="/">Главная</a> | 
+            <a href="/blog/">Блог</a> | 
+            <a href="/photos/">Фотоархив</a> | 
+            <a href="/about/">Обо мне</a>
+        </nav>
+    </header>
+    <main>
+        {{ content }} <!-- Сюда подставится контент страницы -->
+    </main>
+    <footer>
+        <hr>
+        <p>© {{ site.time | date: "%Y" }} VMV</p>
+    </footer>
+</body>
+</html>
