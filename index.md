@@ -65,9 +65,9 @@ title: Главная
   </div>
 </section>
 
-<!-- Разделитель -->
+<!-- Разделитель "Обо мне" -->
 <section class="divider-section">
-  <hr class="divider">
+  <h2 class="divider-title"><a href="/about/">ОБО МНЕ</a></h2>
 </section>
 
 <!-- Обо мне -->
