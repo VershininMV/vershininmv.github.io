@@ -3,7 +3,7 @@ layout: default
 title: Главная
 ---
 
-<!-- Hero-секция (только фон, без текста) -->
+<!-- Hero-секция с фиолетовым фоном -->
 <section class="hero"></section>
 
 <!-- Разделитель "Блог" -->
@@ -14,14 +14,28 @@ title: Главная
 <!-- Категории блога -->
 <section class="content-section">
   <div class="categories">
-    <!-- Простые карточки без анимаций -->
+    <!-- Карточка 1 -->
     <a href="/blog/leather/" class="category">
-      <img src="/img/leather.jpg" alt="Кожевенное дело">
+      <img alt="Кожевенное дело"> <!-- Фиолетовый фон вместо изображения -->
       <h3>Кожевенное дело</h3>
     </a>
+    
+    <!-- Карточка 2 -->
     <a href="/blog/wood/" class="category">
-      <img src="/img/wood.jpg" alt="Столярка">
+      <img alt="Столярка"> <!-- Фиолетовый фон -->
       <h3>Столярка</h3>
+    </a>
+    
+    <!-- Карточка 3 -->
+    <a href="/blog/thread/" class="category">
+      <img alt="Работа с нитью"> <!-- Фиолетовый фон -->
+      <h3>Работа с нитью</h3>
+    </a>
+    
+    <!-- Карточка 4 -->
+    <a href="/blog/games/" class="category">
+      <img alt="Игры"> <!-- Фиолетовый фон -->
+      <h3>Игры</h3>
     </a>
   </div>
 </section>
@@ -34,9 +48,10 @@ title: Главная
 <!-- Галерея -->
 <section class="content-section">
   <div class="gallery">
-    <img src="/img/photo1.jpg" alt="Фото 1">
-    <img src="/img/photo2.jpg" alt="Фото 2">
-    <img src="/img/photo3.jpg" alt="Фото 3">
+    <img alt="Фото 1"> <!-- Фиолетовый фон -->
+    <img alt="Фото 2"> <!-- Фиолетовый фон -->
+    <img alt="Фото 3"> <!-- Фиолетовый фон -->
+    <img alt="Фото 4"> <!-- Фиолетовый фон -->
   </div>
 </section>
 
@@ -48,10 +63,10 @@ title: Главная
 <!-- Секция "Обо мне" -->
 <section class="content-section">
   <div class="about">
-    <img src="/img/about.jpg" alt="Фото" width="300">
+    <img alt="Моё фото"> <!-- Фиолетовый фон -->
     <div>
       <h3>Вершинин Михаил</h3>
-      <p>Краткое описание</p>
+      <p>Краткое описание о себе</p>
     </div>
   </div>
 </section>
