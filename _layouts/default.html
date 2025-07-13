@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <!-- Базовые настройки -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
-  <!-- Подключаем только основной CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Шапка (оставляем как было) -->
+  <!-- Шапка -->
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
-        <img src="/img/logo.png" alt="VMV" width="150">
+        <!-- Логотип (пока без изображения) -->
+        <span style="color: #e8e8e8; font-weight: bold; font-size: 24px;">VMV</span>
       </a>
       <nav class="nav">
         <a href="/" class="nav-link">Главная</a>
@@ -21,13 +20,12 @@
         <a href="/photos/" class="nav-link">Фотоархив</a>
         <a href="/about/" class="nav-link">Обо мне</a>
       </nav>
-      <button class="mobile-menu-toggle">☰</button>
     </div>
   </header>
 
-  {{ content }} <!-- Сюда подставляется контент из markdown-файлов -->
+  {{ content }}
 
-  <!-- Подвал (минимальный) -->
+  <!-- Подвал -->
   <footer class="footer">
     <div class="container">
       <p>© {{ site.time | date: "%Y" }} VMV</p>
