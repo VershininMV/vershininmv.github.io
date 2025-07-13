@@ -1,227 +1,251 @@
+/* Переменные цветов для всего сайта (можно менять в одном месте) */
 :root {
-  --bg-dark: #323232;
-  --bg-light: #e8e8e8;
-  --bg-accent: #6b4423;
-  --text-light: #e8e8e8;
-  --text-dark: #323232;
-  --button-color: #dd6b20;
-  --divider-color: #e8e8e8;
+  --bg-dark: #323232;       /* Тёмный фон (шапка, разделители) */
+  --bg-light: #e8e8e8;      /* Светлый фон (основной) */
+  --bg-accent: #6b4423;     /* Акцентный цвет (коричневый) */
+  --text-light: #e8e8e8;    /* Светлый текст (на тёмном фоне) */
+  --text-dark: #323232;     /* Тёмный текст (на светлом фоне) */
+  --button-color: #dd6b20;  /* Цвет кнопок/ссылок (оранжевый) */
+  --divider-color: #e8e8e8; /* Цвет разделителей */
 }
 
-/* Базовые стили */
+/* Базовые настройки всей страницы */
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
+  font-family: 'Open Sans', sans-serif; /* Шрифт из Google Fonts */
+  margin: 0;  /* Убираем отступы по умолчанию */
   padding: 0;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.6;
+  background-color: var(--bg-light); /* Фон страницы */
+  color: var(--text-dark); /* Цвет текста */
+  line-height: 1.6; /* Межстрочный интервал */
 }
 
+/* Контейнер для центрирования контента */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 100%; /* На всю ширину */
+  max-width: 1200px; /* Но не шире 1200px */
+  margin: 0 auto; /* Автоматические отступы по бокам */
+  padding: 0 15px; /* Отступы внутри */
 }
 
-/* Шапка */
+/* Шапка сайта */
 .header {
-  background-color: var(--bg-dark);
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  background-color: var(--bg-dark); /* Тёмный фон */
+  padding: 15px 0; /* Отступы сверху/снизу */
+  position: fixed; /* Фиксированная позиция */
+  width: 100%; /* На всю ширину */
+  top: 0; /* Прижата к верху */
+  z-index: 1000; /* Поверх других элементов */
 }
 
+/* Внутренний контейнер шапки */
 .header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* Гибкий контейнер */
+  justify-content: space-between; /* Элементы по краям */
+  align-items: center; /* Выравнивание по центру */
 }
 
+/* Стили логотипа */
 .logo img {
-  height: 40px;
-  width: auto;
+  height: 40px; /* Фиксированная высота */
+  width: auto; /* Ширина подстраивается */
 }
 
+/* Навигационное меню */
 .nav {
-  display: flex;
-  gap: 20px;
+  display: flex; /* Элементы в строку */
+  gap: 20px; /* Расстояние между ссылками */
 }
 
+/* Ссылки в меню */
 .nav-link {
-  color: var(--button-color);
-  text-decoration: none;
-  font-weight: 700;
-  transition: color 0.3s;
+  color: var(--button-color); /* Оранжевый цвет */
+  text-decoration: none; /* Без подчёркивания */
+  font-weight: 700; /* Жирный шрифт */
+  transition: color 0.3s; /* Плавное изменение цвета */
 }
 
+/* Состояния ссылок */
 .nav-link:hover, .nav-link.active {
-  color: var(--text-light);
+  color: var(--text-light); /* Белый при наведении/активности */
 }
 
+/* Кнопка меню для мобилок */
 .mobile-menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--text-light);
-  font-size: 24px;
-  cursor: pointer;
+  display: none; /* По умолчанию скрыта */
+  background: none; /* Без фона */
+  border: none; /* Без рамки */
+  color: var(--text-light); /* Белый цвет */
+  font-size: 24px; /* Размер иконки */
+  cursor: pointer; /* Курсор-указатель */
 }
 
-/* Hero-секция */
+/* Hero-секция (главный баннер) */
 .hero {
-  height: 100vh;
-  background: url('/img/hero-bg.jpg') center/cover no-repeat;
-  position: relative;
-  margin-top: 70px; /* Учитываем высоту шапки */
+  height: 30vh; /* 30% от высоты экрана */
+  background: url('/img/hero-bg.jpg') center/cover no-repeat; /* Фоновая картинка */
+  position: relative; /* Для позиционирования текста */
+  margin-top: 70px; /* Отступ под шапку */
+  display: flex; /* Для центрирования текста */
+  align-items: center; /* Вертикальное центрирование */
+  justify-content: center; /* Горизонтальное центрирование */
 }
 
+/* Заголовок в hero-секции */
 .hero-title {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-light);
-  font-size: 5vw;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #323232; /* Тёмно-серый */
+  font-size: 4rem; /* Очень крупный текст */
+  font-weight: 400; /* Нормальная жирность */
+  text-shadow: none; /* Без тени */
+  padding: 20px; /* Внутренние отступы */
+  background-color: rgba(232, 232, 232, 0.7); /* Полупрозрачный светлый фон */
+  border-radius: 8px; /* Скруглённые углы */
+  text-align: center; /* Текст по центру */
 }
 
-/* Разделитель с текстом */
+/* Секции-разделители */
 .divider-section {
-  background-color: var(--bg-dark);
-  padding: 20px 0;
-  text-align: center;
+  background-color: var(--bg-dark); /* Тёмный фон */
+  padding: 10px 0; /* Отступы сверху/снизу */
+  text-align: center; /* Текст по центру */
 }
 
+/* Заголовки разделителей */
 .divider-title {
-  color: var(--text-light);
-  font-size: 2rem;
-  margin: 0;
+  color: var(--text-light); /* Белый текст */
+  font-size: 2rem; /* Крупный шрифт */
+  margin: 0; /* Без отступов */
 }
 
+/* Ссылки в разделителях */
 .divider-title a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit; /* Наследует цвет родителя */
+  text-decoration: none; /* Без подчёркивания */
 }
 
-/* Блоки категорий */
+/* Блок категорий блога */
 .categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px 0;
-  background-color: var(--bg-accent);
+  display: grid; /* Сетка */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоподбор колонок */
+  gap: 20px; /* Расстояние между карточками */
+  padding: 40px 0; /* Отступы секции */
+  background-color: var(--bg-accent); /* Коричневый фон */
 }
 
+/* Карточка категории */
 .category-card {
-  background-color: var(--button-color);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-  text-align: center;
+  background-color: var(--button-color); /* Оранжевый фон */
+  border-radius: 8px; /* Скруглённые углы */
+  overflow: hidden; /* Обрезаем выходящее */
+  transition: transform 0.3s; /* Анимация при наведении */
+  text-align: center; /* Текст по центру */
 }
 
+/* Эффект при наведении */
 .category-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Поднимаем карточку */
 }
 
+/* Изображение в карточке */
 .category-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  width: 100%; /* На всю ширину */
+  height: 180px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезаем с сохранением пропорций */
 }
 
+/* Заголовок карточки */
 .category-card h3 {
-  color: var(--text-light);
-  padding: 15px;
-  margin: 0;
+  color: var(--text-light); /* Белый текст */
+  padding: 15px; /* Внутренние отступы */
+  margin: 0; /* Без внешних отступов */
 }
 
-/* Галерея */
+/* Секция галереи */
 .gallery {
-  padding: 40px 0;
-  background-color: var(--bg-light);
+  padding: 40px 0; /* Отступы секции */
+  background-color: var(--bg-light); /* Светлый фон */
 }
 
+/* Сетка галереи */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+  display: grid; /* Сетка */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоподбор колонок */
+  gap: 15px; /* Расстояние между фото */
 }
 
+/* Элемент галереи */
 .gallery-item img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 4px;
+  width: 100%; /* На всю ширину */
+  height: 150px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезаем с сохранением пропорций */
+  border-radius: 4px; /* Лёгкое скругление */
 }
 
-/* Обо мне */
+/* Секция "Обо мне" */
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: var(--bg-accent);
-  color: var(--text-light);
-  padding: 40px 0;
+  display: flex; /* Гибкий контейнер */
+  flex-wrap: wrap; /* Перенос на узких экранах */
+  align-items: center; /* Выравнивание по центру */
+  background-color: var(--bg-accent); /* Коричневый фон */
+  color: var(--text-light); /* Белый текст */
+  padding: 40px 0; /* Отступы секции */
 }
 
+/* Блок с фото */
 .about-image {
-  flex: 1 1 300px;
-  padding: 20px;
+  flex: 1 1 300px; /* Гибкий размер (мин. 300px) */
+  padding: 20px; /* Внутренние отступы */
 }
 
+/* Фото в блоке */
 .about-image img {
-  width: 100%;
-  border-radius: 8px;
+  width: 100%; /* На всю ширину */
+  border-radius: 8px; /* Скруглённые углы */
 }
 
+/* Текстовый блок */
 .about-content {
-  flex: 2 1 500px;
-  padding: 20px;
+  flex: 2 1 500px; /* В 2 раза шире фото */
+  padding: 20px; /* Внутренние отступы */
 }
 
-/* Адаптивность */
+/* Адаптивность: планшеты */
 @media (max-width: 768px) {
   .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
+    display: none; /* Скрываем меню */
+    flex-direction: column; /* Ссылки в столбик */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 70px; /* Под шапкой */
     left: 0;
-    width: 100%;
-    background-color: var(--bg-dark);
-    padding: 20px;
+    width: 100%; /* На всю ширину */
+    background-color: var(--bg-dark); /* Тёмный фон */
+    padding: 20px; /* Внутренние отступы */
   }
   
   .nav.active {
-    display: flex;
+    display: flex; /* Показываем при активации */
   }
   
   .mobile-menu-toggle {
-    display: block;
+    display: block; /* Показываем кнопку */
   }
   
   .hero-title {
-    font-size: 8vw;
-    right: 5%;
+    font-size: 2.5rem; /* Уменьшаем текст */
+    padding: 10px; /* Меньшие отступы */
   }
   
   .categories {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
   }
 }
 
+/* Адаптивность: телефоны */
 @media (max-width: 480px) {
   .categories {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 колонка */
   }
   
   .gallery-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
   }
 }
