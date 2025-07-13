@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <!-- Базовые настройки -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
+  <!-- Подключаем только основной CSS -->
   <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Шапка -->
+  <!-- Шапка (оставляем как было) -->
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
         <img src="/img/logo.png" alt="VMV" width="150">
       </a>
       <nav class="nav">
-        <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Главная</a>
-        <a href="/blog/" class="nav-link {% if page.url contains '/blog/' %}active{% endif %}">Блог</a>
-        <a href="/photos/" class="nav-link {% if page.url contains '/photos/' %}active{% endif %}">Фотоархив</a>
-        <a href="/about/" class="nav-link {% if page.url contains '/about/' %}active{% endif %}">Обо мне</a>
+        <a href="/" class="nav-link">Главная</a>
+        <a href="/blog/" class="nav-link">Блог</a>
+        <a href="/photos/" class="nav-link">Фотоархив</a>
+        <a href="/about/" class="nav-link">Обо мне</a>
       </nav>
       <button class="mobile-menu-toggle">☰</button>
     </div>
   </header>
 
-  {{ content }}
+  {{ content }} <!-- Сюда подставляется контент из markdown-файлов -->
 
-  <!-- Подвал -->
+  <!-- Подвал (минимальный) -->
   <footer class="footer">
     <div class="container">
       <p>© {{ site.time | date: "%Y" }} VMV</p>
     </div>
   </footer>
-
-  <script src="/js/script.js"></script>
 </body>
 </html>
