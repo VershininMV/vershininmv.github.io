@@ -1,259 +1,95 @@
-/* Переменные цветов для всего сайта (можно менять в одном месте) */
-:root {
-  --bg-dark: #323232;       /* Тёмный фон (шапка, разделители) */
-  --bg-light: #e8e8e8;      /* Светлый фон (основной) */
-  --bg-accent: #6b4423;     /* Акцентный цвет (коричневый) */
-  --text-light: #e8e8e8;    /* Светлый текст (на тёмном фоне) */
-  --text-dark: #323232;     /* Тёмный текст (на светлом фоне) */
-  --button-color: #dd6b20;  /* Цвет кнопок/ссылок (оранжевый) */
-  --divider-color: #e8e8e8; /* Цвет разделителей */
+/* Сброс стандартных отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Базовые настройки всей страницы */
+/* Базовые стили */
 body {
-  font-family: 'Open Sans', sans-serif; /* Шрифт из Google Fonts */
-  margin: 0;  /* Убираем отступы по умолчанию */
-  padding: 0;
-  background-color: var(--bg-light); /* Фон страницы */
-  color: var(--text-dark); /* Цвет текста */
-  line-height: 1.6; /* Межстрочный интервал */
+  font-family: Arial, sans-serif;
+  background-color: #e8e8e8; /* Общий фон всей страницы */
+  color: #323232;
+  line-height: 1.5;
 }
 
 /* Контейнер для центрирования контента */
 .container {
-  width: 100%; /* На всю ширину */
-  max-width: 1200px; /* Но не шире 1200px */
-  margin: 0 auto; /* Автоматические отступы по бокам */
-  padding: 0 15px; /* Отступы внутри */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* Шапка сайта */
+/* Шапка (без изменений) */
 .header {
-  background-color: var(--bg-dark); /* Тёмный фон */
-  padding: 15px 0; /* Отступы сверху/снизу */
-  position: fixed; /* Фиксированная позиция */
-  width: 100%; /* На всю ширину */
-  top: 0; /* Прижата к верху */
-  z-index: 1000; /* Поверх других элементов */
+  background-color: #323232;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-/* Внутренний контейнер шапки */
-.header .container {
-  display: flex; /* Гибкий контейнер */
-  justify-content: space-between; /* Элементы по краям */
-  align-items: center; /* Выравнивание по центру */
-}
-
-/* Стили логотипа */
 .logo img {
-  height: 40px; /* Фиксированная высота */
-  width: auto; /* Ширина подстраивается */
+  height: 40px;
 }
 
-/* Навигационное меню */
 .nav {
-  display: flex; /* Элементы в строку */
-  gap: 20px; /* Расстояние между ссылками */
+  display: flex;
+  gap: 20px;
 }
 
-/* Ссылки в меню */
 .nav-link {
-  color: var(--button-color); /* Оранжевый цвет */
-  text-decoration: none; /* Без подчёркивания */
-  font-weight: 700; /* Жирный шрифт */
-  transition: color 0.3s; /* Плавное изменение цвета */
+  color: #dd6b20;
+  text-decoration: none;
 }
 
-/* Состояния ссылок */
-.nav-link:hover, .nav-link.active {
-  color: var(--text-light); /* Белый при наведении/активности */
-}
-
-/* Кнопка меню для мобилок */
-.mobile-menu-toggle {
-  display: none; /* По умолчанию скрыта */
-  background: none; /* Без фона */
-  border: none; /* Без рамки */
-  color: var(--text-light); /* Белый цвет */
-  font-size: 24px; /* Размер иконки */
-  cursor: pointer; /* Курсор-указатель */
-}
-
-/* Hero-секция (главный баннер) */
+/* Hero-секция (только фон) */
 .hero {
-  height: 30vh; /* 30% от высоты экрана */
-  background: url('/img/hero-bg.jpg') center/cover no-repeat; /* Фоновая картинка */
-  position: relative; /* Для позиционирования текста */
-  margin-top: 70px; /* Отступ под шапку */
-  display: flex; /* Для центрирования текста */
-  align-items: center; /* Вертикальное центрирование */
-  justify-content: center; /* Горизонтальное центрирование */
+  height: 30vh; /* Высота баннера */
+  background: url('/img/hero-bg.jpg') center/cover no-repeat;
 }
 
-/* Заголовок в hero-секции */
-.hero-title {
-  color: #323232; /* Тёмно-серый */
-  font-size: 4rem; /* Очень крупный текст */
-  font-weight: 400; /* Нормальная жирность */
-  text-shadow: none; /* Без тени */
-  padding: 20px; /* Внутренние отступы */
-  background-color: rgba(232, 232, 232, 0.7); /* Полупрозрачный светлый фон */
-  border-radius: 8px; /* Скруглённые углы */
-  text-align: center; /* Текст по центру */
+/* Разделители (упрощённые) */
+.section-divider {
+  background-color: #323232;
+  color: #e8e8e8;
+  text-align: center;
+  padding: 10px 0;
 }
 
-/* Секции-разделители */
-.divider-section {
-  background-color: var(--bg-dark); /* Тёмный фон */
-  padding: 10px 0; /* Отступы сверху/снизу */
-  text-align: center; /* Текст по центру */
-  margin: 20px 0; /* Отступ */
+/* Секции контента (общие стили) */
+.content-section {
+  padding: 20px 0;
 }
 
-/* Заголовки разделителей */
-.divider-title {
-  color: var(--text-light); /* Белый текст */
-  font-size: 1.8rem; /* Крупный шрифт */
-  margin: 0; /* Без отступов */
-  letter-spacing: 2px; /* Кёрнинг (Расстояние между буквами) */
-}
-
-/* Ссылки в разделителях */
-.divider-title a {
-  color: inherit; /* Наследует цвет родителя */
-  text-decoration: none; /* Без подчёркивания */
-  transition: opacity 0.3s; /* Анимация */
-}
-/* Анимация на тексте разделителя при наведении*/
-.divider-title a:hover {
-  opacity: 0.8; /* Прозрачность*/
-}
-
-/* Блок категорий блога */
+/* Категории блога (простая сетка) */
 .categories {
-  display: grid; /* Сетка */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоподбор колонок */
-  gap: 20px; /* Расстояние между карточками */
-  padding: 40px 0; /* Отступы секции */
-  background-color: var(--bg-accent); /* Коричневый фон */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 15px;
 }
 
-/* Карточка категории */
-.category-card {
-  background-color: var(--button-color); /* Оранжевый фон */
-  border-radius: 8px; /* Скруглённые углы */
-  overflow: hidden; /* Обрезаем выходящее */
-  transition: transform 0.3s; /* Анимация при наведении */
-  text-align: center; /* Текст по центру */
-}
-
-/* Эффект при наведении */
-.category-card:hover {
-  transform: translateY(-5px); /* Поднимаем карточку */
-}
-
-/* Изображение в карточке */
-.category-card img {
-  width: 100%; /* На всю ширину */
-  height: 180px; /* Фиксированная высота */
-  object-fit: cover; /* Обрезаем с сохранением пропорций */
-}
-
-/* Заголовок карточки */
-.category-card h3 {
-  color: var(--text-light); /* Белый текст */
-  padding: 15px; /* Внутренние отступы */
-  margin: 0; /* Без внешних отступов */
-}
-
-/* Секция галереи */
+/* Галерея (базовая сетка) */
 .gallery {
-  padding: 40px 0; /* Отступы секции */
-  background-color: var(--bg-light); /* Светлый фон */
-}
-
-/* Сетка галереи */
-.gallery-grid {
-  display: grid; /* Сетка */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоподбор колонок */
-  gap: 15px; /* Расстояние между фото */
-}
-
-/* Элемент галереи */
-.gallery-item img {
-  width: 100%; /* На всю ширину */
-  height: 150px; /* Фиксированная высота */
-  object-fit: cover; /* Обрезаем с сохранением пропорций */
-  border-radius: 4px; /* Лёгкое скругление */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0 15px;
 }
 
 /* Секция "Обо мне" */
 .about {
-  display: flex; /* Гибкий контейнер */
-  flex-wrap: wrap; /* Перенос на узких экранах */
-  align-items: center; /* Выравнивание по центру */
-  background-color: var(--bg-accent); /* Коричневый фон */
-  color: var(--text-light); /* Белый текст */
-  padding: 40px 0; /* Отступы секции */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 15px;
 }
 
-/* Блок с фото */
-.about-image {
-  flex: 1 1 300px; /* Гибкий размер (мин. 300px) */
-  padding: 20px; /* Внутренние отступы */
-}
-
-/* Фото в блоке */
-.about-image img {
-  width: 100%; /* На всю ширину */
-  border-radius: 8px; /* Скруглённые углы */
-}
-
-/* Текстовый блок */
-.about-content {
-  flex: 2 1 500px; /* В 2 раза шире фото */
-  padding: 20px; /* Внутренние отступы */
-}
-
-/* Адаптивность: планшеты */
+/* Адаптивность для мобильных */
 @media (max-width: 768px) {
-  .nav {
-    display: none; /* Скрываем меню */
-    flex-direction: column; /* Ссылки в столбик */
-    position: absolute; /* Абсолютное позиционирование */
-    top: 70px; /* Под шапкой */
-    left: 0;
-    width: 100%; /* На всю ширину */
-    background-color: var(--bg-dark); /* Тёмный фон */
-    padding: 20px; /* Внутренние отступы */
+  .categories, .gallery {
+    grid-template-columns: 1fr;
   }
-  
-  .nav.active {
-    display: flex; /* Показываем при активации */
-  }
-  
-  .mobile-menu-toggle {
-    display: block; /* Показываем кнопку */
-  }
-  
-  .hero-title {
-    font-size: 2.5rem; /* Уменьшаем текст */
-    padding: 10px; /* Меньшие отступы */
-  }
-  
-  .categories {
-    grid-template-columns: 1fr 1fr; /* 2 колонки */
-  }
-}
-
-/* Адаптивность: телефоны */
-@media (max-width: 480px) {
-  .categories {
-    grid-template-columns: 1fr; /* 1 колонка */
-  }
-  
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr; /* 2 колонки */
-  }
-  
 }
