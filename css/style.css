@@ -107,19 +107,26 @@ body {
   background-color: var(--bg-dark); /* Тёмный фон */
   padding: 10px 0; /* Отступы сверху/снизу */
   text-align: center; /* Текст по центру */
+  margin: 20px 0; /* Отступ */
 }
 
 /* Заголовки разделителей */
 .divider-title {
   color: var(--text-light); /* Белый текст */
-  font-size: 2rem; /* Крупный шрифт */
+  font-size: 1.8rem; /* Крупный шрифт */
   margin: 0; /* Без отступов */
+  letter-spacing: 2px; /* Кёрнинг (Расстояние между буквами) */
 }
 
 /* Ссылки в разделителях */
 .divider-title a {
   color: inherit; /* Наследует цвет родителя */
   text-decoration: none; /* Без подчёркивания */
+  transition: opacity 0.3s; /* Анимация */
+}
+/* Анимация на тексте разделителя при наведении*/
+.divider-title a:hover {
+  opacity: 0.8; /* Прозрачность*/
 }
 
 /* Блок категорий блога */
@@ -248,4 +255,5 @@ body {
   .gallery-grid {
     grid-template-columns: 1fr 1fr; /* 2 колонки */
   }
+  
 }
