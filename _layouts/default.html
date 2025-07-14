@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Шапка с гамбургером -->
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
@@ -19,20 +18,18 @@
         <a href="/photos/" class="nav-link">Фотоархив</a>
         <a href="/about/" class="nav-link">Обо мне</a>
       </nav>
-      <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
+      <button class="mobile-menu-toggle">☰</button>
     </div>
   </header>
 
   {{ content }}
 
-  <!-- Подвал -->
   <footer class="footer">
     <div class="container">
       <p>© {{ site.time | date: "%Y" }} VMV</p>
     </div>
   </footer>
 
-  <!-- Подключаем JS -->
   <script src="/js/script.js"></script>
 </body>
 </html>
