@@ -7,11 +7,10 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Шапка -->
+  <!-- Шапка с гамбургером -->
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
-        <!-- Логотип (пока без изображения) -->
         <span style="color: #e8e8e8; font-weight: bold; font-size: 24px;">VMV</span>
       </a>
       <nav class="nav">
@@ -20,6 +19,7 @@
         <a href="/photos/" class="nav-link">Фотоархив</a>
         <a href="/about/" class="nav-link">Обо мне</a>
       </nav>
+      <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
     </div>
   </header>
 
@@ -31,5 +31,8 @@
       <p>© {{ site.time | date: "%Y" }} VMV</p>
     </div>
   </footer>
+
+  <!-- Подключаем JS -->
+  <script src="/js/script.js"></script>
 </body>
 </html>
