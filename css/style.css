@@ -44,7 +44,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  padding-top: 50%; /* Соотношение 2:1 (ширина:высота) */
+  padding-top: 20%; /* Соотношение 2:1 (ширина:высота) */
   background: #8A2BE2;
   overflow: hidden;
 }
