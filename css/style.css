@@ -40,11 +40,20 @@ body {
   font-weight: bold;
 }
 
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #e8e8e8;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* Hero-секция */
 .hero {
   position: relative;
   width: 100%;
-  padding-top: 20%; /* Соотношение 2:1 (ширина:высота) */
+  padding-top: 20%; /* Соотношение 5:1 (ширина:высота) */
   background: #8A2BE2;
   overflow: hidden;
 }
@@ -133,15 +142,36 @@ body {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  /* Мобильное меню */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #323232;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .nav.active {
+    display: flex;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  /* Hero секция для мобильных */
+  .hero {
+    padding-top: 40%; /* Более высокий баннер на мобильных */
+  }
 }
 
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  /* Для мобильных - сохраняем пропорции Hero */
-  .hero {
-    padding-top: 20%; /* Остается 2:1, просто уменьшается размер */
   }
 }
