@@ -1,9 +1,16 @@
-document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-  document.querySelector('.nav').classList.toggle('active');
-});
-
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.nav').classList.remove('active');
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('.nav');
+  
+  menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('active');
+  });
+  
+  // Закрытие меню при клике на ссылку
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      nav.classList.remove('active');
+    });
   });
 });
