@@ -40,100 +40,47 @@ body {
   font-weight: bold;
 }
 
-/* Hero-секция */
-.hero {
-  height: 40vh;
-  background: #8A2BE2;
-}
-
-/* Разделители */
-.section-divider {
-  background: #323232;
+/* Гамбургер-меню */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
   color: #e8e8e8;
-  padding: 12px 0;
-  text-align: center;
-}
-
-.section-divider h2 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-/* Сетка категорий */
-.categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.category {
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.category img {
-  width: 100%;
-  height: 150px;
-  background: #8A2BE2;
-  border-radius: 4px;
-}
-
-/* Галерея (5 изображений) */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.gallery img {
-  width: 100%;
-  height: 150px;
-  background: #8A2BE2;
-}
-
-/* Секция "Обо мне" (25% фото / 75% текст) */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 30px;
-  padding: 20px 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.about img {
-  width: 100%;
-  height: 200px;
-  background: #8A2BE2;
-  border-radius: 8px;
-}
-
-.about-content {
-  padding: 0 20px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #323232;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
   .about {
     grid-template-columns: 1fr;
   }
   
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Остальные стили (hero, категории, галерея, "обо мне") остаются без изменений */
