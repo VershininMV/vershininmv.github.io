@@ -180,18 +180,3 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* Оптимизация загрузки изображений */
-img {
-  transition: opacity 0.3s;
-  opacity: 0;
-}
-
-img.loaded {
-  opacity: 1;
-}
-
-/* Плейсхолдер для изображений */
-img:not([src]) {
-  background: #f0f0f0;
-}
