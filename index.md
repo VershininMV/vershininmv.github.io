@@ -15,19 +15,19 @@ title: Главная
 <section class="content-section">
   <div class="categories">
     <a href="/blog/leather/" class="category">
-      <img alt="Кожевенное дело">
+      <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Кожевенное дело">
       <h3>Кожевенное дело</h3>
     </a>
     <a href="/blog/wood/" class="category">
-      <img alt="Столярка">
+      <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Столярка">
       <h3>Столярка</h3>
     </a>
     <a href="/blog/thread/" class="category">
-      <img alt="Работа с нитью">
+      <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Работа с нитью">
       <h3>Работа с нитью</h3>
     </a>
     <a href="/blog/games/" class="category">
-      <img alt="Игры">
+      <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Игры">
       <h3>Игры</h3>
     </a>
   </div>
@@ -41,11 +41,11 @@ title: Главная
 <!-- Галерея (5 изображений) -->
 <section class="content-section">
   <div class="gallery">
-    <img alt="Фото 1">
-    <img alt="Фото 2">
-    <img alt="Фото 3">
-    <img alt="Фото 4">
-    <img alt="Фото 5">
+    <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Фото 1">
+    <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Фото 2">
+    <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Фото 3">
+    <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Фото 4">
+    <img src="https://drive.google.com/uc?export=view&id=1buL7mddTv3jOqT65j2JV_3R6xGcJiePh" alt="Фото 5">
   </div>
 </section>
 
@@ -57,7 +57,7 @@ title: Главная
 <!-- Секция "Обо мне" -->
 <section class="content-section">
   <div class="about">
-    <img alt="Моё фото">
+    <img src="https://drive.google.com/uc?export=view&id=1qetmgmQFGs8GfYnDifNf5qebcuJNFADU" alt="Моё фото">
     <div class="about-content">
       <h3>Вершинин Михаил</h3>
       <p>Профессиональный кожевенник и столяр с 10-летним стажем. Специализируюсь на создании уникальных изделий ручной работы. В свободное время провожу мастер-классы и разрабатываю настольные игры для детей.</p>
