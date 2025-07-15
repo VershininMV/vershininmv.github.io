@@ -180,3 +180,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Стиль для ссылок-разделителей */
+.section-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
