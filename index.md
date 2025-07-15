@@ -8,7 +8,7 @@ title: Главная
 
 <!-- Разделитель "Блог" -->
 <section class="section-divider">
-  <a href="/blog/" class="plain-link"><h2>БЛОГ</h2></a>
+  <a href="/blog/" class="section-link"><h2>БЛОГ</h2></a>
 </section>
 
 <!-- Категории блога -->
@@ -35,7 +35,7 @@ title: Главная
 
 <!-- Разделитель "Фотоархив" -->
 <section class="section-divider">
-  <a href="/photos/" class="plain-link"><h2>ФОТОАРХИВ</h2></a>
+  <a href="/photos/" class="section-link"><h2>ФОТОАРХИВ</h2></a>
 </section>
 
 <!-- Галерея (5 изображений) -->
@@ -51,7 +51,7 @@ title: Главная
 
 <!-- Разделитель "Обо мне" -->
 <section class="section-divider">
-  <a href="/about/" class="plain-link"><h2>ОБО МНЕ</h2></a>
+  <a href="/about/" class="section-link"><h2>ОБО МНЕ</h2></a>
 </section>
 
 <!-- Секция "Обо мне" -->
