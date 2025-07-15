@@ -38,14 +38,29 @@ title: VMV
   <a href="/photos/" class="section-link"><h2>ФОТОАРХИВ</h2></a>
 </section>
 
-<!-- Галерея (5 изображений) -->
+<!-- Галерея (5 изображений в стиле категорий блога) -->
 <section class="content-section">
-  <div class="gallery">
-    <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-    <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-    <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-    <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-    <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
+  <div class="categories">
+    <div class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
+      <h3>Фото 1</h3>
+    </div>
+    <div class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
+      <h3>Фото 2</h3>
+    </div>
+    <div class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
+      <h3>Фото 3</h3>
+    </div>
+    <div class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
+      <h3>Фото 4</h3>
+    </div>
+    <div class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
+      <h3>Фото 5</h3>
+    </div>
   </div>
 </section>
 
