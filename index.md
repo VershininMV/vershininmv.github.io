@@ -38,29 +38,25 @@ title: VMV
   <a href="/photos/" class="section-link"><h2>ФОТОАРХИВ</h2></a>
 </section>
 
-<!-- Галерея (5 изображений в стиле категорий блога) -->
+<!-- Галерея (4 изображения с годами) -->
 <section class="content-section">
   <div class="categories">
-    <div class="category">
+    <a href="/photos/2022/" class="category">
       <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-      <h3>Фото 1</h3>
-    </div>
-    <div class="category">
+      <h3>2022</h3>
+    </a>
+    <a href="/photos/2023/" class="category">
       <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-      <h3>Фото 2</h3>
-    </div>
-    <div class="category">
+      <h3>2023</h3>
+    </a>
+    <a href="/photos/2024/" class="category">
       <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-      <h3>Фото 3</h3>
-    </div>
-    <div class="category">
+      <h3>2024</h3>
+    </a>
+    <a href="/photos/2025/" class="category">
       <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-      <h3>Фото 4</h3>
-    </div>
-    <div class="category">
-      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-      <h3>Фото 5</h3>
-    </div>
+      <h3>2025</h3>
+    </a>
   </div>
 </section>
 
