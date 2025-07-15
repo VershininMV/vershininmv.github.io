@@ -10,13 +10,10 @@ body {
 /* Шапка */
 .header {
   background: #323232;
-  padding: 15px 0;
+  padding: 10px 0; /* Уменьшенный отступ */
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 70px;
-  display: flex;
-  align-items: center;
 }
 
 .header .container {
@@ -28,8 +25,8 @@ body {
   padding: 0 15px;
 }
 
+/* Логотип */
 .logo {
-  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -37,8 +34,10 @@ body {
 .logo-img {
   height: 40px;
   width: auto;
+  margin: 0; /* Убраны все отступы */
 }
 
+/* Навигация */
 .nav {
   display: flex;
   gap: 20px;
@@ -81,7 +80,6 @@ body {
   font-size: 1.8rem;
 }
 
-/* Стили для ссылок в разделителях */
 .section-link {
   color: #e8e8e8;
   text-decoration: none;
@@ -119,7 +117,7 @@ img {
   border-radius: 4px;
 }
 
-/* Галерея (5 изображений) */
+/* Галерея */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -134,7 +132,7 @@ img {
   height: 150px;
 }
 
-/* Секция "Обо мне" (25% фото / 75% текст) */
+/* Секция "Обо мне" */
 .about {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -165,7 +163,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
   
-  /* Мобильное меню */
   .nav {
     display: none;
     position: absolute;
@@ -188,11 +185,6 @@ img {
   
   .logo-img {
     height: 36px;
-  }
-  
-  .header {
-    height: 60px;
-    padding: 10px 0;
   }
 }
 
