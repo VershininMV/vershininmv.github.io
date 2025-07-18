@@ -10,7 +10,7 @@ body {
 /* Шапка */
 .header {
   background: #323232;
-  padding: 8px 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -22,93 +22,132 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 15px;
 }
 
 /* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo-img {
-  height: 36px;
+  height: 40px;
   width: auto;
+  margin: 0;
 }
 
 /* Навигация */
 .nav {
   display: flex;
-  gap: 12px;
+  gap: 20px;
 }
 
 .nav-link {
   color: #dd6b20;
   text-decoration: none;
   font-weight: bold;
-  padding: 4px 0;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #e8e8e8;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Hero-секция */
 .hero {
+  position: relative;
   width: 100%;
   padding-top: 15%;
   background: #8A2BE2;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 /* Разделители */
 .section-divider {
   background: #323232;
   color: #e8e8e8;
-  padding: 8px 0;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .section-divider h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Общие стили для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* Сетка категорий */
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 12px;
-  padding: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 15px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .category {
   background: #fff;
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .category img {
+  width: 100%;
   height: 140px;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 
 /* Секции с контентом */
 .content-section {
-  padding: 12px 0;
+  padding: 15px 0;
 }
 
 /* Секции "Обо мне" и хобби */
 .about {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 16px;
-  padding: 12px;
-  margin: 0 auto 20px;
-  background: #6b4423;
-  border-radius: 8px;
+  gap: 20px;
+  padding: 15px;
   max-width: 1200px;
+  margin: 20px auto;
+  align-items: center;
+  background: #6b4423;
+  border-radius: 10px;
 }
 
 .about img {
+  width: 100%;
   height: 180px;
   border-radius: 6px;
 }
 
 .about-content {
-  padding: 0 12px;
+  padding: 0 15px;
   color: #e8e8e8;
+}
+
+.about-content h3 {
+  color: #e8e8e8;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 /* Адаптивность */
@@ -120,11 +159,30 @@ body {
   
   .categories {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
   
   .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #323232;
+    flex-direction: column;
     width: 180px;
     padding: 12px;
+  }
+  
+  .nav.active {
+    display: flex;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .logo-img {
+    height: 36px;
   }
 }
 
@@ -133,7 +191,7 @@ body {
     grid-template-columns: 1fr;
   }
   
-  .logo-img {
-    height: 32px;
+  .section-divider {
+    margin: 15px 0;
   }
 }
