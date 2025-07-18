@@ -94,7 +94,7 @@ img {
   object-fit: cover;
 }
 
-/* Единая сетка для категорий и галереи */
+/* Единая сетка для категорий */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -119,15 +119,24 @@ img {
   margin-bottom: 10px;
 }
 
-/* Секция "Обо мне" */
+/* Секции с контентом */
+.content-section {
+  padding: 20px 0;
+}
+
+/* Секции "Обо мне" и основных хобби */
 .about {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 30px;
   padding: 20px 15px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   align-items: center;
+}
+
+.about:last-child {
+  margin-bottom: 0;
 }
 
 .about img {
@@ -144,6 +153,11 @@ img {
 @media (max-width: 768px) {
   .about {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .about img {
+    height: 180px;
   }
   
   .categories {
