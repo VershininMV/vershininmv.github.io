@@ -10,7 +10,7 @@ body {
 /* Шапка */
 .header {
   background: #323232;
-  padding: 10px 0;
+  padding: 8px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -22,187 +22,109 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 12px;
 }
 
 /* Логотип */
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo-img {
-  height: 40px;
+  height: 36px;
   width: auto;
-  margin: 0;
 }
 
 /* Навигация */
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 12px;
 }
 
 .nav-link {
   color: #dd6b20;
   text-decoration: none;
   font-weight: bold;
-}
-
-.mobile-menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #e8e8e8;
-  font-size: 24px;
-  cursor: pointer;
+  padding: 4px 0;
 }
 
 /* Hero-секция */
 .hero {
-  position: relative;
   width: 100%;
-  padding-top: 20%;
+  padding-top: 15%;
   background: #8A2BE2;
-  overflow: hidden;
 }
 
 /* Разделители */
 .section-divider {
   background: #323232;
   color: #e8e8e8;
-  padding: 12px 0;
-  text-align: center;
-  margin-bottom: 30px; /* Добавлен отступ снизу */
+  padding: 8px 0;
 }
 
 .section-divider h2 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
-.section-link {
-  color: #e8e8e8;
-  text-decoration: none;
-  display: block;
-}
-
-/* Общие стили для изображений */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* Единая сетка для категорий */
+/* Сетка категорий */
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px 15px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 12px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .category {
   background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 12px;
+  border-radius: 6px;
 }
 
 .category img {
-  width: 100%;
-  height: 150px;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  height: 140px;
+  margin-bottom: 8px;
 }
 
 /* Секции с контентом */
 .content-section {
-  padding: 0 0 40px 0; /* Верхний отступ убран, нижний увеличен */
+  padding: 12px 0;
 }
 
-/* Секции "Обо мне" и основных хобби */
+/* Секции "Обо мне" и хобби */
 .about {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 30px;
-  padding: 25px;
-  max-width: 1200px;
-  margin: 0 auto 30px; /* Отступ между блоками 30px */
-  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  margin: 0 auto 20px;
   background: #6b4423;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.about:last-child {
-  margin-bottom: 0;
+  border-radius: 8px;
+  max-width: 1200px;
 }
 
 .about img {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  height: 180px;
+  border-radius: 6px;
 }
 
 .about-content {
-  padding: 0 20px;
+  padding: 0 12px;
   color: #e8e8e8;
-}
-
-.about-content h3 {
-  color: #e8e8e8;
-  margin-top: 0;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
   .about {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 25px;
-  }
-  
-  .about img {
-    height: 180px;
+    gap: 12px;
   }
   
   .categories {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .section-divider {
-    margin-bottom: 25px;
-  }
-  
   .nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #323232;
-    flex-direction: column;
-    width: 200px;
-    padding: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  }
-  
-  .nav.active {
-    display: flex;
-  }
-  
-  .mobile-menu-toggle {
-    display: block;
-  }
-  
-  .logo-img {
-    height: 36px;
+    width: 180px;
+    padding: 12px;
   }
 }
 
@@ -211,15 +133,7 @@ img {
     grid-template-columns: 1fr;
   }
   
-  .content-section {
-    padding-bottom: 30px;
-  }
-  
-  .about {
-    margin-bottom: 20px;
-  }
-  
-  .section-divider {
-    margin-bottom: 20px;
+  .logo-img {
+    height: 32px;
   }
 }
