@@ -129,10 +129,13 @@ img {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 30px;
-  padding: 20px 15px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto 40px;
   align-items: center;
+  background: #6b4423;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .about:last-child {
@@ -143,10 +146,17 @@ img {
   width: 100%;
   height: 200px;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .about-content {
   padding: 0 20px;
+  color: #e8e8e8;
+}
+
+.about-content h3 {
+  color: #e8e8e8;
+  margin-top: 0;
 }
 
 /* Адаптивность */
@@ -154,6 +164,7 @@ img {
   .about {
     grid-template-columns: 1fr;
     gap: 15px;
+    padding: 15px;
   }
   
   .about img {
