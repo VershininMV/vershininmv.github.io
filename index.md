@@ -29,11 +29,6 @@ title: VMV
       <h3>Работа с нитью</h3>
       <p class="event-description">Вышивка и плетение</p>
     </a>
-    <a href="/blog/games/" class="category">
-      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="Заглушка">
-      <h3>Игры</h3>
-      <p class="event-description">Настольные игры</p>
-    </a>
   </div>
 </section>
 
@@ -64,6 +59,16 @@ title: VMV
       <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="2023">
       <h3>2023</h3>
       <p class="event-description">Новые техники</p>
+    </a>
+    <a href="/photos/2024/" class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="2024">
+      <h3>2024</h3>
+      <p class="event-description">Новые горизонты</p>
+    </a>
+    <a href="/photos/2025/" class="category">
+      <img src="https://i.ibb.co/SHTh5WW/image.jpg" alt="2025">
+      <h3>2025</h3>
+      <p class="event-description">Текущие проекты</p>
     </a>
   </div>
 </section>
