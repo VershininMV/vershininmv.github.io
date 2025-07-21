@@ -8,7 +8,7 @@ title: VMV
 
 <!-- Разделитель "Блог" -->
 <section class="section-divider">
-  <a href="/blog/" class="section-link"><h2>БЛОГГГ</h2></a>
+  <a href="/blog/" class="section-link"><h2>БЛОГ</h2></a>
 </section>
 
 <!-- Категории блога -->
