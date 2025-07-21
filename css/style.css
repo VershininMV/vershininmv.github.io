@@ -167,6 +167,86 @@ img {
   color: #323232;
 }
 
+/* Обо мне: грид фото */
+.bio-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.bio-photos img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Календарь-плейсхолдер */
+.calendar-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #8A2BE2;
+  border-radius: 8px;
+}
+
+/* Проекты */
+.projects details {
+  margin-bottom: 15px;
+  background: #e8e8e8;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+
+.projects summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #323232;
+}
+
+.projects ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.projects li {
+  margin-bottom: 5px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+.projects li:before {
+  content: "•";
+  color: #dd6b20;
+  position: absolute;
+  left: 0;
+}
+
+/* Значимые моменты */
+.moments h3 {
+  color: #dd6b20;
+  margin: 20px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.moments ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.moments li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.moments li:before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #6b4423;
+}
+
 /* Адаптивность */
 @media (max-width: 1024px) {
   .categories {
@@ -177,6 +257,10 @@ img {
 @media (max-width: 768px) {
   .about {
     grid-template-columns: 1fr;
+  }
+  
+  .bio-photos {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .categories {
@@ -212,5 +296,13 @@ img {
 @media (max-width: 480px) {
   .categories {
     grid-template-columns: 1fr;
+  }
+  
+  .bio-photos {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects details {
+    padding: 10px;
   }
 }
